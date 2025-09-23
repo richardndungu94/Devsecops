@@ -46,7 +46,7 @@ cybersecurity-portfolio/
 │ │── ci-cd/ # GitHub Actions workflows
 │ │── REPORT.md
 │
-│── FINAL-PORTFOLIO.pdf # One polished recruiter-facing report
+│── FINAL-PORTFOLIO.pdf
 ```
 ##  Goals
 
