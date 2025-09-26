@@ -61,7 +61,8 @@ Building a vulnerable app gives hands on experience to see the common mistake de
 
 ## Screenshort of API
 
-![Alt text](Images/API1.png)
+![Alt text](/Images/API1.png)
+
 
 
 
