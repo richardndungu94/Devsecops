@@ -36,9 +36,25 @@ The OWASP vulnerabilities
   Test: Register two accounts, try GET/PUT on /users/:id using the other user’s id.
   Fix: enforce authorization checks (owner or role) on every resource access; don’t trust client-supplied ids
 
+- Hardcoded & exposed credentials / weak/constant secrets (e.g. JWT secret).
+  - Impact: attacker can forge tokens or login with backdoored credentials.
+  - How to test: search code for strings like secret, JWT, tokens; try to craft JWTs with guessed secret.
+  - Fix: keep secrets out of code, rotate secrets, use strong random secrets.
 
+- Weak password handling / missing hashing / poor password policy
+  - Impact: plaintext or weakly hashed passwords expose users on compromise.
+  - How to test: use postman to find the exposed passwords.
+  - Fix: use bcrypt/argon2 for encryption,enforce strong password policy & rate limit attempts
+  - 
+- Missing authentication middleware / routes unprotected.
+  - Impact: protected endpoints accessible without tokens.
+  - How to test: call endpoints that should be protected (e.g. /me, /profile) without token and see if data returns.
+  - Fix: ensure middleware applied to protected routes; fail-closed default.
 
-
+- No rate limiting / brute-force protection.
+  - Impact: easy credential stuffing / brute force login.
+  - How to test: script repeated login attempts and watch responses/locks.
+  - Fix: implement rate limiting on auth endpoints (express-rate-limit), account lockout, CAPTCHA where appropriate.
 
 
 
