@@ -16,25 +16,25 @@ The API is vulnerable to various OWASP Top 10 Vulnerablities,and OWASP API top t
 ## The OWASP vulnerabilities
 
 - No input validation (unsanitized user input).
-  Impact: enables NoSQL injection, XSS in any HTML output, malformed data, bypasses.
-  Test:payload like    < "username": "$gt": "">
-  Fix: validate input server-side (Zod/Joi/express-validator); sanitize strings; reject unexpected types.
+  - Impact: enables NoSQL injection, XSS in any HTML output, malformed data, bypasses.
+  - Test:payload like    < "username": "$gt": "">
+  - Fix: validate input server-side (Zod/Joi/express-validator); sanitize strings; reject unexpected types.
 
 - Sensitive information discolure;
-  Impact: leaked database credentials, JWT secrets, API keys. The repo contains a .env file in the tree (committed)
-  How to test: check repo for .env, check responses for leaked config, attempt to read .env endpoints if served.
-  Fix: remove .env from repo, add to .gitignore, rotate all secrets, use vault or CI secrets.
+  - Impact: leaked database credentials, JWT secrets, API keys. The repo contains a .env file in the tree (committed)
+  - How to test: check repo for .env, check responses for leaked config, attempt to read .env endpoints if served.
+  - Fix: remove .env from repo, add to .gitignore, rotate all secrets, use vault or CI secrets.
 
 - Error information leakage (stack traces / backend error messages returned).
-  Impact- Returns rack backend error
-  How to test: send malformed requests and view error responses 
-  Fix: in production return generic error messages and log details server-side only; use a structured logger.
+  - Impact- Returns rack backend error
+  - How to test: send malformed requests and view error responses 
+  - Fix: in production return generic error messages and log details server-side only; use a structured logger.
 
   
 - Insecure Direct Object Reference (IDOR) / broken access control.
-  Impact: users can access/modify other users’ data by changing IDs in URLs or payloads.
-  Test: Register two accounts, try GET/PUT on /users/:id using the other user’s id.
-  Fix: enforce authorization checks (owner or role) on every resource access; don’t trust client-supplied ids
+  - Impact: users can access/modify other users’ data by changing IDs in URLs or payloads.
+  - Test: Register two accounts, try GET/PUT on /users/:id using the other user’s id.
+  - Fix: enforce authorization checks (owner or role) on every resource access; don’t trust client-supplied ids
 
 - Hardcoded & exposed credentials / weak/constant secrets (e.g. JWT secret).
   - Impact: attacker can forge tokens or login with backdoored credentials.
@@ -55,6 +55,7 @@ The API is vulnerable to various OWASP Top 10 Vulnerablities,and OWASP API top t
   - Impact: easy credential stuffing / brute force login.
   - How to test: script repeated login attempts and watch responses/locks.
   - Fix: implement rate limiting on auth endpoints (express-rate-limit), account lockout, CAPTCHA where appropriate.
+
 
 
 
