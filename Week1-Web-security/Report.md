@@ -1,4 +1,4 @@
-Building the vulnerable application
+## Building the vulnerable application
 
 This week focus was to build a vulnerable API.
 
@@ -7,13 +7,13 @@ This task helps understatnd security flaws from both developer and attackers per
 The API is vulnerable to various OWASP Top 10 Vulnerablities,and OWASP API top ten.
 
 
-The weeks tasks:
+## The weeks tasks:
 
-. Develope aplication with Node.js,create UI log in page
+. Develope application with Node.js,create UI log in page
 . Intentionally add the owasp top 10 vulnerabilities
 . Interact with the API to find  out what security flaws were injected.
 
-The OWASP vulnerabilities
+## The OWASP vulnerabilities
 
 - No input validation (unsanitized user input).
   Impact: enables NoSQL injection, XSS in any HTML output, malformed data, bypasses.
@@ -55,6 +55,7 @@ The OWASP vulnerabilities
   - Impact: easy credential stuffing / brute force login.
   - How to test: script repeated login attempts and watch responses/locks.
   - Fix: implement rate limiting on auth endpoints (express-rate-limit), account lockout, CAPTCHA where appropriate.
+
 
 
 
