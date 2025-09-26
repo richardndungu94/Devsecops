@@ -1,6 +1,6 @@
 ## Building the vulnerable application
 
-This week focus was to build a vulnerable API.
+This week focus is to build a vulnerable API.
 
 This task helps understatnd security flaws from both developer and attackers perspectives.
 
@@ -56,6 +56,8 @@ The API is vulnerable to various OWASP Top 10 Vulnerablities,and OWASP API top t
   - How to test: script repeated login attempts and watch responses/locks.
   - Fix: implement rate limiting on auth endpoints (express-rate-limit), account lockout, CAPTCHA where appropriate.
 
+## Summary 
+Building a vulnerable app gives hands on experience to see the common mistake developers make when building an application and how attackers can exploit them
 
 
 
