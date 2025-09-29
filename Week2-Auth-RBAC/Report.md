@@ -1,7 +1,7 @@
 # Auth & Role Based Acces control (RBAC)
 
 
-This weeek taks in this Devsecops priject was to build access control for the vulnerable API. 
+This week tasK in this Devsecops priject was to build access control for the vulnerable API. 
 I built the admin end point to enale the admin to get users and delete them
 these roles are to be assigned to admins specifically but this is not the case as attackes have wasy to escalate privileges
 
@@ -138,4 +138,5 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 ---
 
 # Appendix — Images from the vulnerable API.
+
 
