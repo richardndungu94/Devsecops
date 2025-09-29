@@ -1,17 +1,18 @@
-# Auth & Role Based Acces control (RBAC)
+# Auth & Role Based Access control (RBAC)
 
 
-This week tasK in this Devsecops/Appsec project was to build access control for the vulnerable API. 
-I built the admin end point to enable the admin to get users and delete them
-These roles are to be assigned to admins specifically but this is not the case as attackes have wasy to escalate privileges
+This week's task in this **Devsecops/Appsec** project was to build access control for the vulnerable API. 
+I built the Admin endpoint to enable the admin to get users and delete them
+
+RBAC roles are to be assigned to admins specifically but this is not the case as attakers have ways to escalate privileges
 
 # TASK
 - Build admin endpoint
 - Add routes i.e Users and Delete
-- Test JWT token for priviledge escalation: Test JWT token of normal user for admin endpoint
-- Find secretes in the code
+- Test JWT token for privilege escalation: Test JWT token of normal user for admin endpoint
+- Find secrets in the code
 - Test IDOR : Test whether user A can access user B information
-- Manipulate JWT using secrete from the code to give normal user access to admin endpoint
+- Manipulate JWT using secret from the code to give normal user access to admin endpoint
 - Test admin endpoint: Delete users,test if a normal user can delete other users
 - Understand the importance of RBAC
 
@@ -163,13 +164,13 @@ The admin can delete a user as seen below
 
 # Hard coded Secrete
 
-The source code has the jwt secrete hardcoded and attackers can easily get it and use it to manipulate the jwt token
+The source code has the jwt secret hardcoded and attackers can easily get it and use it to manipulate the jwt token
 
 ![Alt text](/Images/jwthardcodedsecrete.png)
 
 # Jwt secrete manipulation
 
-The secrete can be used to manipulate the JWT token to escalate the provillages of a normal user.
+The secret can be used to manipulate the JWT token to escalate the provillages of a normal user.
 
 ![Alt text](/Images/jwtsecrete.png)
 
@@ -178,6 +179,7 @@ The secrete can be used to manipulate the JWT token to escalate the provillages 
 As seen user A can access User B information this is a common  OWASP vulnerability. 
 
 ![Alt text](/Images/IDOR.png)
+
 
 
 
