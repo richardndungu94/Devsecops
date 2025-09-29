@@ -30,7 +30,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');            // Added CORS
+
 const authRoutes = require('./routes/authRoutes');
+const adminRoutes = require('./routes/adminRoutes');
 
 dotenv.config(); // Load environment variables from .env
 
@@ -42,19 +44,22 @@ app.use(cors({            // Enable CORS
     origin: "http://localhost:5173"   // Replace with your frontend URL
 }));
 
+
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/admin', adminRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
-    .then(() => {
-        console.log('MongoDB connected successfully');
+  .then(() => {
+    console.log('MongoDB connected successfully');
 
-        // Start server after DB connection
-        app.listen(process.env.PORT, () => 
-            console.log(`Server running on PORT ${process.env.PORT}`)
-        );
-    })
-    .catch(err => {
-        console.error('MongoDB connection error:', err);
-    });
+    // Start server after DB connection
+    app.listen(process.env.PORT, () => 
+      console.log(`Server running on PORT ${process.env.PORT}`)
+    );
+  })
+  .catch(err => {
+    console.error('MongoDB connection error:', err);
+  });
+// ...existing code...

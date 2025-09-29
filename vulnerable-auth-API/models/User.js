@@ -3,10 +3,11 @@ const bcrypt =require ('bcryptjs');
 
 //define schema,defines the structure of a user
 const userschema = new mongoose.Schema({
-    username:{type:String},// we did not validate
-    phoneNumber:{type:String},
-    email:{type:String,required: true,unique:true},
-    password:{type:String,required:true},
+    username: { type: String }, // we did not validate
+    phoneNumber: { type: String },
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
+    role: { type: String, default: 'user' }, // Add role field
 });
 
 // to make this api vulnerable i intentionally commented the bcrypt block
