@@ -143,16 +143,19 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 ![Alt text](/Images/adminroute.png)
 
 # Hard coded Secrete
+The source code has the jwt secrete hardcoded and attackers can easily get it and use it to manipulate the jwt token
 
 ![Alt text](/Images/jwthardcodedsecrete.png)
 
 # Jwt secrete manipulation
+The secrete can be used to manipulate the JWT token to escalate the provillages of a normal user
 
 ![Alt text](/Images/jwtsecrete.png)
 
 # IDOR
-
+As seen user A can access User B indormation this is a common  OWASP vulnerability. 
 ![Alt text](/Images/IDOR.png)
+
 
 
 
