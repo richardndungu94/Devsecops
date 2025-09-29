@@ -109,10 +109,6 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 
 ---
 
-# Tests to add (automated checklist)
-**Authentication**
-- Reject tokens with invalid signature → `401`.  
-- Reject expired tokens → `401`.
 
 **Authorization**
 - `user` cannot access `GET /users` (admin-only) → `403`.  
@@ -123,13 +119,6 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 **CI checks**
 - Fail build if `JWT_SECRET` appears in repo (grep/secret-scan).  
 - Regression tests that assert DTO shape (only allowed fields returned).
-
----
-
-# Safe PoC policy (how to document PoCs)
-- Keep PoC code in `tests/pocs/` and label `LAB-ONLY`.  
-- PoC docs should include: **Objective**, **Environment** (local/dev only), **High-level method** (non-actionable), **Sanitized result**, **Remediation status**.  
-- Never publish raw secret values, private keys, or full exploit scripts in public README or public repos.
 
 ---
 
@@ -148,33 +137,5 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 
 ---
 
-# Appendix — small secure code snippets
-
-**Require owner or admin middleware**
-```js
-// middleware/requireOwnerOrAdmin.js
-function requireOwnerOrAdmin(req, res, next) {
-  const requesterId = String(req.user.id);
-  const targetId = String(req.params.id);
-  if (req.user.role === 'admin' || requesterId === targetId) return next();
-  return res.status(403).json({ error: 'Forbidden' });
-}
-module.exports = requireOwnerOrAdmin;
-```
-
-**Fail-fast on missing secret**
-```js
-if (!process.env.JWT_SECRET || process.env.JWT_SECRET.length < 32) {
-  console.error('FATAL: set a strong JWT_SECRET'); process.exit(1);
-}
-```
-
-**Short-lived token signing**
-```js
-const token = jwt.sign(
-  { id: user._id, role: user.role },
-  process.env.JWT_SECRET,
-  { expiresIn: '15m' }
-);
-```
+# Appendix — Images from the vulnerable API.
 
