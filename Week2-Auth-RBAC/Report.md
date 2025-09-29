@@ -1,9 +1,10 @@
 # Auth & Role Based Acces control (RBAC)
 
+
 This weeek taks in this Devsecops priject was to build access control for the vulnerable API. 
 I built the admin end point to enale the admin to get users and delete them
-these roles are to be assigned to admins specifically but this is not the case as attackes have wasy to eszalate privileges
----
+these roles are to be assigned to admins specifically but this is not the case as attackes have wasy to escalate privileges
+
 
 # Executive summary
 Weak RBAC and related issues (hardcoded/weak JWT secrets, missing ownership checks, IDOR) lead to:
@@ -41,7 +42,7 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 
 ---
 
-# Typical weaknesses & effects (seen in the lab app)
+# Typical weaknesses & effects (as seen in this vulnerable app)
 1. **Hardcoded / weak JWT secret** — attacker who learns the secret can forge tokens with arbitrary claims (e.g., `role: "admin"`).  
 2. **IDOR on `GET /users/:id`** — any authenticated user can fetch other users’ profiles.  
 3. **Insufficient authorization on `DELETE /users/:id`** — deletions may be possible by unauthorized users.  
@@ -50,7 +51,7 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 
 ---
 
-# How these can be exploited (high-level, lab-only)
+# How these can be exploited.
 **Token forging (weak secret)**  
 - Find hardcoded secret in source or commit history → craft JWT with `role: admin` → call admin endpoints (`GET /users`, `DELETE /users/:id`) → full control.
 
@@ -64,7 +65,7 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 
 ---
 
-# OWASP Web/API Top 10 mapping (relevant items)
+# OWASP Web/API Top 10 mapping 
 - **Broken Access Control (API1 / A01)** — RBAC fails, IDOR, missing ownership checks.  
 - **Broken Authentication (API2 / A02)** — weak/hardcoded tokens enable authentication bypass.  
 - **Excessive Data Exposure (API3 / A03)** — returning full objects increases risk.  
@@ -73,7 +74,7 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 
 ---
 
-# Prioritized mitigations (actionable)
+# Prioritized mitigations 
 
 ## Immediate (must-fix)
 1. **Remove hardcoded secrets**  
@@ -176,3 +177,4 @@ const token = jwt.sign(
   { expiresIn: '15m' }
 );
 ```
+
