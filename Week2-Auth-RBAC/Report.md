@@ -139,4 +139,21 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 
 # Appendix — Images from the vulnerable API.
 
+# Admin endpoint
+![Alt text](/Images/adminroute.png)
+
+# Hard coded Secrete
+
+![Alt text](/Images/jwthardcodedsecrete.png)
+
+# Jwt secrete manipulation
+
+![Alt text](/Images/jwtsecrete.png)
+
+# IDOR
+
+![Alt text](/Images/IDOR.png)
+
+
+
 
