@@ -1,9 +1,18 @@
 # Auth & Role Based Acces control (RBAC)
 
 
-This week tasK in this Devsecops priject was to build access control for the vulnerable API. 
-I built the admin end point to enale the admin to get users and delete them
-these roles are to be assigned to admins specifically but this is not the case as attackes have wasy to escalate privileges
+This week tasK in this Devsecops/Appsec project was to build access control for the vulnerable API. 
+I built the admin end point to enable the admin to get users and delete them
+These roles are to be assigned to admins specifically but this is not the case as attackes have wasy to escalate privileges
+
+TASK
+Build admin endpoint
+Add routes i.e Users and Delete
+Test JWT token for priviledge escalation: Test JWT token of normal user for admin endpiont
+Fid secretes in the code
+test IDOR :test whether user A can access user B information
+manipulate JWT using secrete from the code to give normal user access to admin endpoint
+test admin endpoint: delete users,test if a normla user can delete other users
 
 
 # Executive summary
@@ -140,21 +149,28 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 # Appendix — Images from the vulnerable API.
 
 # Admin endpoint
+
+
 ![Alt text](/Images/adminroute.png)
 
 # Hard coded Secrete
+
 The source code has the jwt secrete hardcoded and attackers can easily get it and use it to manipulate the jwt token
 
 ![Alt text](/Images/jwthardcodedsecrete.png)
 
 # Jwt secrete manipulation
-The secrete can be used to manipulate the JWT token to escalate the provillages of a normal user
+
+The secrete can be used to manipulate the JWT token to escalate the provillages of a normal user.
 
 ![Alt text](/Images/jwtsecrete.png)
 
 # IDOR
-As seen user A can access User B indormation this is a common  OWASP vulnerability. 
+
+As seen user A can access User B information this is a common  OWASP vulnerability. 
+
 ![Alt text](/Images/IDOR.png)
+
 
 
 
