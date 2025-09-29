@@ -154,6 +154,13 @@ Broken Access Control = when the app fails to enforce *who* can do *what*. Commo
 
 ![Alt text](/Images/adminroute.png)
 
+# Delete user
+
+The admin can delete a user as seen below
+
+![Alt text](/Images/deleteroute.png)
+
+
 # Hard coded Secrete
 
 The source code has the jwt secrete hardcoded and attackers can easily get it and use it to manipulate the jwt token
@@ -171,6 +178,7 @@ The secrete can be used to manipulate the JWT token to escalate the provillages 
 As seen user A can access User B information this is a common  OWASP vulnerability. 
 
 ![Alt text](/Images/IDOR.png)
+
 
 
 
