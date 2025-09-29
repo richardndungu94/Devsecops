@@ -5,14 +5,15 @@ This week tasK in this Devsecops/Appsec project was to build access control for 
 I built the admin end point to enable the admin to get users and delete them
 These roles are to be assigned to admins specifically but this is not the case as attackes have wasy to escalate privileges
 
-TASK
-Build admin endpoint
-Add routes i.e Users and Delete
-Test JWT token for priviledge escalation: Test JWT token of normal user for admin endpiont
-Fid secretes in the code
-test IDOR :test whether user A can access user B information
-manipulate JWT using secrete from the code to give normal user access to admin endpoint
-test admin endpoint: delete users,test if a normla user can delete other users
+# TASK
+- Build admin endpoint
+- Add routes i.e Users and Delete
+- Test JWT token for priviledge escalation: Test JWT token of normal user for admin endpoint
+- Find secretes in the code
+- Test IDOR : Test whether user A can access user B information
+- Manipulate JWT using secrete from the code to give normal user access to admin endpoint
+- Test admin endpoint: Delete users,test if a normal user can delete other users
+- Understand the importance of RBAC
 
 
 # Executive summary
@@ -170,6 +171,7 @@ The secrete can be used to manipulate the JWT token to escalate the provillages 
 As seen user A can access User B information this is a common  OWASP vulnerability. 
 
 ![Alt text](/Images/IDOR.png)
+
 
 
 
