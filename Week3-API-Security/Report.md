@@ -137,8 +137,9 @@ This report maps threats → root cause → recommended fixes (code + configurat
 
 ## Appendix — Threat model image
 
-The threate model image using OWASP Threat Dragon 
+The threat model image using OWASP Threat Dragon 
 
 ![Alt text](/Images/STRIDE.png)
+
 
 
