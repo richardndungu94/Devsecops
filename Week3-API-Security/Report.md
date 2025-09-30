@@ -115,16 +115,16 @@ This report maps threats → root cause → recommended fixes (code + configurat
 ### Immediate (High impact, quick)
 1. **Remove hard-coded secrets**:
 2. **Enforce TLS**:
-3. **Hash passwords correctly**: r
+3. **Hash passwords correctly**: 
 4. **Implement rate limiting on auth endpoints**
 5. **Implement RBAC middleware and server-side authorization checks for admin endpoints**
-6. Validate JWT tokens strictly
-7. Add request validation for all APIs (whitelisting allowed fields), remove mass-assignment.
-8. Sanitize outputs: remove password from user objects returned by APIs.
-9. Secrets management (Vault), CI checks to prevent secrets in commits (pre-commit hooks & GitHub secret scanning).
-10. Centralized logging & alerting (detect abnormal admin actions, brute-force spikes).
-11. Harden network: place DB in private subnet, use VPC, firewall rules, and rotate keys regularly.
-12. Add DAST/SAST to CI (ZAP, Semgrep) and schedule periodic pentests.
+6. **Validate JWT tokens strictly**
+7. **Add request validation for all APIs (whitelisting allowed fields)**, remove mass-assignment.
+8. **Sanitize outputs**: remove password from user objects returned by APIs.
+9. **Secrets management (Vault)**, CI checks to prevent secrets in commits (pre-commit hooks & GitHub secret scanning).
+10. **Centralized logging & alerting (detect abnormal admin actions, brute-force spikes)**.
+11. **Harden network**: place DB in private subnet, use VPC, firewall rules, and rotate keys regularly.
+12. **Add DAST/SAST to CI **(ZAP, Semgrep) and schedule periodic pentests.
 
 ---
 
@@ -135,4 +135,5 @@ This report maps threats → root cause → recommended fixes (code + configurat
 
 ---
 
-## Appendix — Threate model image
+## Appendix — Threat model image
+
