@@ -1,0 +1,18 @@
+stages:
+  - test
+
+# -------------------------------
+# Semgrep SAST job
+# -------------------------------
+semgrep-sast:
+  stage: test
+  image: returntocorp/semgrep:latest
+  script:
+    # Run Semgrep with security-focused rulepacks
+    - semgrep --config=p/ci --config=p/secrets --config=p/owasp-top-ten --json > semgrep-report.json || true
+  artifacts:
+    reports:
+      sast: semgrep-report.json
+    paths:
+      - semgrep-report.json
+    expire_in: 1 week
