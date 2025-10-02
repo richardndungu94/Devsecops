@@ -126,6 +126,11 @@ Gitlab Artifacts allows you to download the scan results in JSON format
 
 ![Alt text](/Images/scan14.png)
 
+# JSON Report
+
+This is the report Gitlab compiles after a SAST scan
+
+![Alt text](/Images/scan15.png)
 
 # Semgrep
 
@@ -141,6 +146,9 @@ Gitlab Artifacts allows you to download the scan results in JSON format
 # Scans
 
 ![Alt text](/Images/scan4.png)
+
+
+
 
 
 
