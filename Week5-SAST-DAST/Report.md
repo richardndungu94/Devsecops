@@ -122,6 +122,8 @@ These are the links to the scanners
 
 # Gitlab SAST scan
 
+Gitlab Artifacts allows you to download the scan results in JSON format
+
 ![Alt text](/Images/scan14.png)
 
 
@@ -139,6 +141,7 @@ These are the links to the scanners
 # Scans
 
 ![Alt text](/Images/scan4.png)
+
 
 
 
