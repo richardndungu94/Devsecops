@@ -1,6 +1,6 @@
 # DevSecOps CI/CD Security Pipeline
 
-This weeks task was to implement **DevSecOps**  by integrating **security checks early in the SDLC (Shift Left)**
+This week's task was to implement **DevSecOps**  by integrating **security checks early in the SDLC (Shift Left)**
 
 # Task
 
@@ -120,10 +120,26 @@ These are the links to the scanners
 ---
 ## Appendix -Images
 
-# SAST scan
+# Gitlab SAST scan
+
+![Alt text](/Images/scan14.png)
+
+
 # Semgrep
+
+![Alt text](/Images/scan9.png)
+
+
+
 # Synk
-# CVE
+
+![Alt text](/Images/scan5.png)
+
+
+# Scans
+
+![Alt text](/Images/scan4.png)
+
 
 
 
