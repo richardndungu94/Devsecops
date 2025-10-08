@@ -135,3 +135,9 @@ The project not only reinforced technical cloud deployment skills but also built
 
 ![Alt text](/Images/aws15.2.png)
 
+# S3- AWS Storage
+
+![Alt text](/Images/aws1.png)
+
+
+
