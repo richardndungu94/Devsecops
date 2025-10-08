@@ -67,6 +67,13 @@ I ensured that only the required ports were exposed — specifically, port 3000 
 Access was restricted to internal services and specific IP ranges, following the **defense-in-depth** security principle.  
 This stage strengthened my understanding of VPC subnets, inbound and outbound rules, and the importance of tightly controlled access boundaries.
 
+# Storage S3
+
+- Created S3 bucket to store Images.
+- Created IAM Policy for ECS to have permission to add Images and remove them
+- Uploaded Images on the S3.
+
+
 ---
 
 ### **7. Monitoring and Logs**
@@ -126,4 +133,5 @@ The project not only reinforced technical cloud deployment skills but also built
 
 # Aws Repo for vuln app
 
-![Alt text](/Images/aws15.png)
+![Alt text](/Images/aws15.2.png)
+
