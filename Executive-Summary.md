@@ -6,7 +6,9 @@ This five-week **DevSecOps / Application Security Engineering** project demonstr
 
 Through practical implementation, I built, analyzed, secured, and deployed a **vulnerable authentication API**—mimicking real-world enterprise application environments—to showcase my ability to operate across **AppSec, DevSecOps, Threat Modeling, Cloud Security**, and **Secure SDLC** domains.
 
-### ✅ **Key Deliverables**
+---
+
+## **Key Deliverables**
 
 * Built a **vulnerable Node.js authentication API** to simulate OWASP Top 10 flaws.
 * Implemented **RBAC, JWT auth**, and demonstrated **privilege escalation attacks** and mitigations.
@@ -268,3 +270,4 @@ By combining **hands-on exploitation, remediation, automation, and cloud securit
 It showcases not only technical mastery but also strategic understanding of **how to integrate security seamlessly into development pipelines** — turning reactive security into proactive, automated defense.
 
 ---
+
