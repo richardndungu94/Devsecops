@@ -180,7 +180,7 @@ Delivered a **Risk Register & Mitigation Plan**, ready for executive consumption
 * **False Positive Handling:** Baselining, MR review, and rule tuning.
 * **Continuous Security Feedback:** Developers receive real-time vulnerability insight.
 
-**Impact:** Achieved **end-to-end CI/CD visibility** and continuous vulnerability assessment in line with **modern AppSec pipelines**.
+**Impact:** Achieved **end-to-end CI/CD visibility** and continuous vulnerability assessment.
 
 ---
 
@@ -222,7 +222,7 @@ Delivered a working **secure cloud deployment workflow** mirroring enterprise De
 
 ---
 
-# 🧩 Technical Skills Demonstrated
+#  Technical Skills Gained
 
 | Category                         | Tools / Frameworks                               | Competencies                                   |
 | -------------------------------- | ------------------------------------------------ | ---------------------------------------------- |
@@ -235,7 +235,7 @@ Delivered a working **secure cloud deployment workflow** mirroring enterprise De
 
 ---
 
-# 🏆 Demonstrated AppSec Role Readiness
+# Domains for the skills gained.
 
 ### ✔️ Application Security Engineer
 
@@ -267,10 +267,11 @@ Delivered a working **secure cloud deployment workflow** mirroring enterprise De
 
 This DevSecOps/AppSec project mirrors the **full lifecycle of modern application security engineering** — from identifying vulnerabilities in development to securing deployments in the cloud.
 
-By combining **hands-on exploitation, remediation, automation, and cloud security**, the project demonstrates readiness for roles requiring practical expertise in **Application Security**, **DevSecOps**, and **Cloud Security Engineering**.
-
 It showcases not only technical mastery but also strategic understanding of **how to integrate security seamlessly into development pipelines** — turning reactive security into proactive, automated defense.
 
+I recommend anyone intrested in application security to go through this project to enhance their skills.
+
 ---
+
 
 
