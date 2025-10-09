@@ -211,7 +211,7 @@ Delivered a working **secure cloud deployment workflow** mirroring enterprise De
 
 ---
 
-# 🧩 Integrated Outcome — From Vulnerability to Secure Cloud Pipeline
+#  Integrated Outcome — From Vulnerability to Secure Cloud Pipeline
 
 | Phase        | Domain                 | Tools / Techniques                 | Outcome                                |
 | ------------ | ---------------------- | ---------------------------------- | -------------------------------------- |
@@ -263,7 +263,7 @@ Delivered a working **secure cloud deployment workflow** mirroring enterprise De
 
 ---
 
-# 🧠 Final Reflection
+# Final Thoughts
 
 This DevSecOps/AppSec project mirrors the **full lifecycle of modern application security engineering** — from identifying vulnerabilities in development to securing deployments in the cloud.
 
@@ -272,6 +272,7 @@ It showcases not only technical mastery but also strategic understanding of **ho
 I recommend anyone intrested in application security to go through this project to enhance their skills.
 
 ---
+
 
 
 
