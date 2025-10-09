@@ -1,6 +1,6 @@
 ---
 
-# 🧠 Executive Summary — DevSecOps & Application Security Project
+#  Executive Summary — DevSecOps & Application Security Project
 
 This five-week **DevSecOps / Application Security Engineering** project demonstrates end-to-end capability in identifying, exploiting, and remediating security vulnerabilities within a full-stack web API.
 
@@ -18,7 +18,9 @@ Through practical implementation, I built, analyzed, secured, and deployed a **v
 
 ---
 
-# 🛡️ Alignment to AppSec / DevSecOps Job Roles
+#  Alignment to AppSec / DevSecOps Job Roles
+
+This projects give strong emphasis on these domains:
 
 ### **1. Application Security Engineer**
 
@@ -38,7 +40,7 @@ Through practical implementation, I built, analyzed, secured, and deployed a **v
 
 * Hardened AWS deployment using **ECR private registries, least-privilege IAM**, and **VPC security groups**.
 * Ensured secure inter-service communication and encrypted storage using **S3 + IAM policies**.
-* Applied **defense-in-depth** via segmentation, network access rules, and runtime monitoring.
+  
 
 ### **4. Secure SDLC / AppSec Program Contributor**
 
@@ -270,4 +272,5 @@ By combining **hands-on exploitation, remediation, automation, and cloud securit
 It showcases not only technical mastery but also strategic understanding of **how to integrate security seamlessly into development pipelines** — turning reactive security into proactive, automated defense.
 
 ---
+
 
