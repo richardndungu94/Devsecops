@@ -91,8 +91,7 @@ The goal of the project is to help :
 ## 🛠️ Tools & References
 
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)  
-- [PortSwigger Web Security Academy](https://portswigger.net/web-security)  
-- [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)  
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security)    
 - [OWASP ZAP](https://www.zaproxy.org/)  
 - [Semgrep](https://semgrep.dev/)  
 - [Threat Dragon](https://owasp.org/www-project-threat-dragon/)   
