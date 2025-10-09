@@ -51,7 +51,7 @@ This projects give strong emphasis on these domains:
 
 ---
 
-# 📚 Week-by-Week Technical Summary
+# Week-by-Week Technical Summary
 
 ## **Week 1 — Building a Vulnerable Application**
 
@@ -272,6 +272,7 @@ It showcases not only technical mastery but also strategic understanding of **ho
 I recommend anyone intrested in application security to go through this project to enhance their skills.
 
 ---
+
 
 
 
