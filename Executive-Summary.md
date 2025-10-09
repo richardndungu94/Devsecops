@@ -269,9 +269,10 @@ This DevSecOps/AppSec project mirrors the **full lifecycle of modern application
 
 It showcases not only technical mastery but also strategic understanding of **how to integrate security seamlessly into development pipelines** — turning reactive security into proactive, automated defense.
 
-I recommend anyone intrested in application security to go through this project to enhance their skills.
+**## I recommend anyone intrested in application security to go through this project to enhance their skills.**
 
 ---
+
 
 
 
